@@ -4,7 +4,7 @@ import './App.css'
 function App() {
  return(
 <>
-<Lottery></Lottery>
+<Lottery n={5} winning = {25}></Lottery>
 
 </>
  )

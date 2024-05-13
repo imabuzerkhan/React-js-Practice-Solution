@@ -7,7 +7,7 @@ function getticket(n){
 }
 
 
-function Setticket(arr){
+function sum(arr){
  return arr.reduce((sum , curr)=> sum + curr , 0)
 }
-export{getticket , Setticket};
+export{getticket , sum};
