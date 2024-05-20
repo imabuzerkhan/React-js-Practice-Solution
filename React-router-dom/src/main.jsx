@@ -12,6 +12,10 @@ import {
 import Home from "./Home.jsx";
 import About from "./About.jsx";
 import Contact from "./Contact.jsx";
+import User from "./User.jsx";
+import Github from "./Github.jsx";
+import {githubInfoLoader} from "./NGithub.jsx"
+
 
 const router = createBrowserRouter([
   {
@@ -29,6 +33,15 @@ element : <Home/>
       {
         path : "Contact",
         element : <Contact/>
+      },{
+        path : "user/:userid",
+        element : <User/>
+      },
+      {
+        
+        path : "github",
+        element : <Github/>,
+        loader:githubInfoLoader
       }
     ]
   }
