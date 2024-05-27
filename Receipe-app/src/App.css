@@ -1,13 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   background-color: lightcoral;
 }
 
 .heading {
-  width: 94.1%;
+  width: 100%;
+  height: 8vh;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   padding: 10px 40px;
@@ -29,7 +31,10 @@ body {
   max-width: 500px;
   border: 5px soild rgb(124, 121, 121);
   outline: none;
-
+  padding: 6px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
   color: black;
   font-weight: 800;
 }
@@ -42,14 +47,11 @@ body {
 }
 .right div {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 18px;
-  transition: all 1s;
+  font-size: 25px;
+  transition: all 1s ease-in-out;
 }
 .right div:hover {
-  background-color: lightcoral;
-  color: white;
-  padding: 4px 10px;
-  border-radius: 10px;
+  color: lightcoral;
 }
 
 .box {
