@@ -33,12 +33,12 @@ const PopularSlider = () => {
                 <img
                   src={d.strMealThumb}
                   alt=""
-                  style={{ width: "18rem", height: "17rem" }}
+                  style={{ width: "14.9rem", height: "15rem" }}
                 />
                 <div className="text-value">
-                <h1 className="name-h1">{d.strMeal}</h1>
-                <h3 className="cateogry-h3">Category: {d.strCategory}</h3>
-                <p className="area-p">Food: {d.strArea}</p>
+                  <h1 className="name-h1">{d.strMeal}</h1>
+                  <h3 className="cateogry-h3">Category: {d.strCategory}</h3>
+                  <p className="area-p">Food: {d.strArea}</p>
                 </div>
               </div>
             </Link>

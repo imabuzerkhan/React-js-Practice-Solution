@@ -25,6 +25,7 @@ const Navbar = () => {
               <h1>Recipe App</h1>
             </Link>
           </div>
+
           <div className="search">
             <form onSubmit={handleFormSubmit}>
               <input
@@ -50,6 +51,7 @@ const Navbar = () => {
               </button>
             </form>
           </div>
+
           <div className="right">
             <Link to="/Country/Indian" className="Link">
               <div>India</div>
