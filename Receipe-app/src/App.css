@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 body {
-  background-color: lightcoral;
+  background-color: rgb(247, 247, 247);
 }
 
 .heading {
   width: 100%;
-  height: 8vh;
-  background-color: white;
+
+  background-color: rgb(21, 18, 41);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   padding: 10px 40px;
   overflow: hidden;
@@ -34,8 +34,8 @@ body {
   padding: 6px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  
-  color: black;
+
+  color: rgb(255, 255, 255);
   font-weight: 800;
 }
 .right {
@@ -49,6 +49,7 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 25px;
   transition: all 1s ease-in-out;
+  color: white;
 }
 .right div:hover {
   color: lightcoral;

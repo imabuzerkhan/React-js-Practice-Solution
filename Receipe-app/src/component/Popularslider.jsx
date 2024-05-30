@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 // Import css files
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { Link
- } from "react-router-dom";
+import "./popular.css";
+
+import { Link } from "react-router-dom";
 
 const PopularSlider = () => {
   const [data, setData] = useState([]);
@@ -16,53 +15,35 @@ const PopularSlider = () => {
       );
       const data = await api.json();
 
-      // console.log(data.meals);
+      console.log(data);
       setData(data.meals);
     };
 
     fetchData();
   }, []);
 
-  var settings = {
-    // dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 2000,
-    pauseOnHover: true,
-  };
-
   return (
     <>
-      <div
-        style={{
-          height: "56vh",
-          width: "90%",
-          margin: "auto",
-        }}
-      >
-        <Slider
-          {...settings}
-          style={{
-            margin: "1rem",
-          }}
-        >
-          {data.map((d) => {
-            return (
-              <Link to={`/${d.idMeal}`} key={d.idMeal}>
-              <div className="box">
+      <div className="text-h1">Food Item</div>
+      <div className="main-meal-one">
+        {data.map((d) => {
+          return (
+            <Link to={`/${d.idMeal}`} key={d.idMeal}>
+              <div className="box-one">
                 <img
                   src={d.strMealThumb}
                   alt=""
                   style={{ width: "18rem", height: "17rem" }}
-                  className="image-slider"
                 />
+                <div className="text-value">
+                <h1 className="name-h1">{d.strMeal}</h1>
+                <h3 className="cateogry-h3">Category: {d.strCategory}</h3>
+                <p className="area-p">Food: {d.strArea}</p>
+                </div>
               </div>
-              </Link>
-            );
-          })}
-        </Slider>
+            </Link>
+          );
+        })}
       </div>
     </>
   );

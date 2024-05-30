@@ -1,0 +1,33 @@
+.main-meal-one {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 68px;
+  justify-content: center; /* Center the cards horizontally */
+  margin-top: 50px;
+  padding: 10px 60px;
+  margin-bottom: 2rem;
+}
+.box-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  text-align: center;
+  background-color: rgb(21, 18, 41);
+
+  transition: transform 0.2s;
+  width: 18rem; /* Set a fixed width for the cards */
+}
+
+.text-h1 {
+  font-size: 42px;
+  color: black;
+  font-weight: 800;
+  margin: 15px 0px;
+  padding: 10px 60px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
