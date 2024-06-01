@@ -2,22 +2,23 @@
   text-decoration: none;
   list-style: none;
 }
+
 .main-meal-one {
   display: flex;
   flex-wrap: wrap;
-  gap: 68px;
+  gap: 40px;
   align-items: start;
   justify-content: start; /* Center the cards horizontally */
   margin-top: 50px;
-  padding: 10px 60px;
   margin-bottom: 2rem;
+  padding: 0rem 4rem;
 }
 .box-one {
   border: 1px solid #ddd;
   border-radius: 8px;
 
   background-color: rgb(21, 18, 41);
-
+  margin-bottom: 20px;
   transition: transform 0.2s;
   width: 15rem; /* Set a fixed width for the cards */
 }
@@ -26,9 +27,16 @@
   font-size: 42px;
   color: black;
   font-weight: 800;
-  margin: 15px 0px;
-  padding: 10px 60px;
+  text-align: center;
+  /* margin: 15px 0px; */
+  margin-bottom: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+.slogan {
+  text-align: center;
+  color: rgb(21, 18, 41);
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .text-value {
@@ -60,4 +68,27 @@
   font-weight: 500;
   font-family: monospace;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .text-h1 {
+    font-size: 28px;
+    color: black;
+    font-weight: 800;
+    text-align: center;
+    /* margin: 15px 0px; */
+    margin-bottom: 10px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .slogan {
+    text-align: center;
+    color: rgb(21, 18, 41);
+    font-size: 18px;
+    padding: 2px 18px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .main-meal-one {
+    padding: 5rem;
+    gap: 1.4rem;
+    margin-top: -54px;
+  }
 }

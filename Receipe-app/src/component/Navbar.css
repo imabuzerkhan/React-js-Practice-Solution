@@ -2,4 +2,14 @@
   text-decoration: none;
   color: black;
 }
-
+@media screen and (max-width: 768px) {
+  .search .bar {
+    display: none;
+  }
+  .search button {
+    display: none;
+  }
+  .right  {
+    display: none;
+  }
+}

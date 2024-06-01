@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Popularslider from './Popularslider'
 import Trendingslider from './Trendingslider'
 import Banner from './Banner'
+import Footer from './Footer'
 const Home = () => {
   return (
    <>
@@ -10,6 +11,7 @@ const Home = () => {
      <Banner/>
       <Popularslider/>
       <Trendingslider/>
+      <Footer/>
    </>
     
     

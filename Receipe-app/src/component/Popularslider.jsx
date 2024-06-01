@@ -24,7 +24,11 @@ const PopularSlider = () => {
 
   return (
     <>
-      <div className="text-h1">Food Item</div>
+    <div className="main-container-pop">
+    <div className="text-h1">Popular Recipes</div>
+      <div className="slogan">
+        <p> Taste the diversity, savor the flavors, and enjoy cooking like never before!</p>
+      </div>
       <div className="main-meal-one">
         {data.map((d) => {
           return (
@@ -38,13 +42,15 @@ const PopularSlider = () => {
                 <div className="text-value">
                   <h1 className="name-h1">{d.strMeal}</h1>
                   <h3 className="cateogry-h3">Category: {d.strCategory}</h3>
-                  <p className="area-p">Food: {d.strArea}</p>
+                  <p className="area-p">Cuisine: {d.strArea}</p>
                 </div>
               </div>
             </Link>
           );
         })}
       </div>
+    </div>
+      
     </>
   );
 };
